@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "title": "Modern Apartment in Bole",
+    "price": "$120,000",
+    "image": "/static/img/house1.jpg",
+    "bedrooms": 3,
+    "bathrooms": 2
+  },
+  {
+    "id": 2,
+    "title": "Cozy Villa in CMC",
+    "price": "$250,000",
+    "image": "/static/img/house2.jpg",
+    "bedrooms": 4,
+    "bathrooms": 3
+  },
+  {
+    "id": 3,
+    "title": "Commercial Space in Kazanchis",
+    "price": "$500,000",
+    "image": "/static/img/house3.jpg",
+    "bedrooms": 0,
+    "bathrooms": 1
+  }
+]

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Property Listings</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <nav class ='navbar'>
+        <div class ="nav-container">
+            <a href ="#" class = "nav-logo"> Abissiniya Properties</a>
+            <div class ='nav-menu'>
+                <a href ='#' class ="nav-link">Home</a>
+                <a href= "#" class="nav-link"> Listing</a>
+                <a href = "#" class = "nav-link"> About</a>
+                <a href = "#" class = "nav-link"> contact</a>
+                <button class= "nav-button" onclick = "showLogin()">Login/sign Up </button>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <h1>Available Properties</h1>
+        <div id="properties-container" class="properties-grid">
+            <!-- JavaScript will add the property cards here -->
+            <p>Loading properties...</p>
+        </div>
+    </div>
+<div id= "loginModal" class= "modal">
+    <div class = "modal-content">
+        <span class= "close" onclick= "closeLogin()">&times;</span>
+        <h2>Login to Your Account </h2>
+        <form>
+            <input type= "email" placeholder="Email Adress" required>
+            <input type= "password" placeholder = "password" required>
+            <button type ="submit"> Login</button>
+        </form>
+        <p> Don't have an account? <a href= "#" onclick = "showsignup()">Sign up here </a></P>
+        </div>
+    </div>
+
+    <!-- Link to the JavaScript file -->
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
